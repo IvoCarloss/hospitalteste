@@ -99,8 +99,8 @@ main{
 
 .frist{
     display: flex;
-    background-color: var(--color1);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--black);
 }
     
 
@@ -123,11 +123,19 @@ main{
 
 .second{
     display: flex;
-    background-color: var(--color1);
-    color: var(--white);
-    gap: 1rem;
-    align-items: center;
-    flex-direction: column;
+    background-color: var(--white);
+    color: var(--black);
+    gap: 2rem;
+    align-items: row;
+    justify-content: right;
+    flex-direction: row;
+}
+
+#localzicao-foto{
+    display: flex;
+    align-items: row;
+    justify-content: end;
+    flex-direction: end;
 }
 
 .imagemhospital{
@@ -136,10 +144,10 @@ main{
 
 .third{
     display: flex;
-    background-color: var(--color1);
+    background-color: var(--white);
     flex-direction: column;
     align-items: center;
-    color: var(--white);
+    color: var(--black);
     gap: 1rem;
 }
 
