@@ -1,15 +1,25 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
 }
+:root{
+    --color:#09348C;
+    --color1:#172D59;
+    --color2: #6F9BF2;
+    --color3: #A8C5FF;
+    --color4: #DBE7FF;
+    --color5: #60a757;
+    --white: #fff;
+    --black:rgb(0, 0, 0);
+}
 
 body{
-    font-family: Roboto Mono;
-    background-color: var(--color5);
-    color: var(--color);
+    font-family: Lato;
+    background-color: var(--color4);
+    color: var(--color2);
     height: 100vh;
 }
 .menu{
@@ -30,16 +40,7 @@ body{
     text-decoration: underline;
 }
 
-:root{
-    --color:#F20519;
-    --color1:#8C030E;
-    --color2: #57EF40;
-    --color3: #5A7056;
-    --color4: #3D463C;
-    --color5: #293827;
-    --white: #fff;
-    --white1: #ac9595d7;
-}
+
 header{
     display: flex;
     justify-content: space-around;
@@ -47,14 +48,17 @@ header{
     gap: 1rem;
     flex-wrap: wrap;
     padding: .5rem;
-    background-color: var(--color1);
+    background-color: var(--color3);
     min-height: 50px;
-
 }
+
+#tele{
+    color: var(--white);
+}
+
 .box-bnt-login{
     display: flex;
     gap: 2rem;
-    
 }
 
 .bnt-login{
@@ -77,38 +81,46 @@ main{
     gap: 4rem;
 }
 
-.first{
+.frist{
     display: flex;
-    justify-content: space-evenly;
-    gap: 2rem;
-    flex-wrap: wrap;
-    align-items: center;
-    min-height: 600px;
-}
-
-#menu-planos{
-    background-color: var(--color3);
+    background-color: var(--color1);
     color: var(--white);
+}
+    
+
+.menu-planos{
     display:flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    
+    gap: 3rem;
+}
+
+.meus-planos div{
+    width: 33%;
+}
+
+.title{
+    color: var(--white);
+    display: flex;
+    align-items: center;
 }
 
 .second{
     display: flex;
-    background-color: var(--color3);
+    background-color: var(--color1);
     color: var(--white);
     gap: 1rem;
     align-items: center;
     flex-direction: column;
 }
 
+.imagemhospital{
+    border-radius: 4rem;
+}
+
 .third{
     display: flex;
-    background-color: var(--color3);
+    background-color: var(--color1);
     flex-direction: column;
     align-items: center;
     color: var(--white);
@@ -117,7 +129,7 @@ main{
 
 .fourth{
     display: flex;
-    background-color: var(--color3);
+    background-color: var(--color1);
     color: var(--white);
     flex-direction: column;
     align-items: center;
@@ -126,20 +138,31 @@ main{
 
 h2{
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
+
 section{
     padding: 4rem;
 }
 
-#Planos1{
+#Planos1 h2{
     display: flex;
+    text-align: end;
+    gap: 3rem;
 }
 
-#Planos2{
+#Planos2 h2{
     display: flex;
+    text-align: end;
+    gap: 3rem;
 }
-#Planos3{
+#Planos3 h2{
     display: flex;
+    text-align: end;
+    gap: 3rem;
+    justify-content: space-around;
 }
+
+
